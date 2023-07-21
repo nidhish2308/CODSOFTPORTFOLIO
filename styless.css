@@ -1,0 +1,450 @@
+*{
+  margin: auto;
+  padding: auto;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: #fff;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+.container{
+   padding: 10px 10%;
+}
+nav{
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.logo{
+  width: 300px;
+  margin-right: 5px;
+}
+nav ul{
+  margin-left: 10px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.hero{
+  padding-top: 5%;
+  padding-bottom: 3rem;
+  }
+  .hero .left img{
+  width: 400px;
+  }
+  .hero .right {
+  color: rgb(157, 141, 117);
+  padding-top: 20%;
+  margin-top: -7rem;
+  }
+  .hero .right h5{
+  font-size: 1.6rem;
+  color:rgb(131, 131, 220);
+  margin-bottom: 0.5rem;
+  }
+  .hero .right h1{
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  }
+  .hero .right h1 span{
+  color: red;
+  }
+  .hero .right p{
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  }
+  .flex{
+    display: flex;
+    }
+    .items-centre{
+    align-items: center;
+    }
+    .justify-between{
+    justify-content: space-between;
+    }
+    .justify-center{
+    justify-content: center;
+    }
+    .justify-right{
+    justify-content: right;
+    }
+    .btn{
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    }
+    .btn-primary{
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: -15rem;
+    }
+    .btn-primary:hover{
+    background: transparent;
+    border-color:blue;
+    color:goldenrod;
+    }
+    .flex-1{
+    flex: 1;
+    }
+    .btn-secondary{
+    background: sandybrown;
+    color: black;
+    border-color: blueviolet;
+    }
+    .btn-secondary:hover{
+    background: green;
+    color: yellow;
+    }
+    section{
+      margin-top: 300;
+      padding: 4%;
+      padding-left: 1;
+      background-color: #dcd0d0;
+      }
+      section.about img {
+        margin-left: 10px;
+        padding-left: 2px;
+      }
+      section.about h1{
+      margin-bottom: 2rem;
+      margin-top: 1px;
+      padding-top: 1px;
+      font-size: 70;
+      font-weight: 600;
+      color: rgb(7, 7, 7);
+      }
+      section.about h1 span{
+      color: red;
+      }
+      section.about h3{
+      font-size: 49;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #1b4a2c;
+      }
+      section.about p{
+      font-family: 'Lato', sans-serif;
+      color: rgb(81, 52, 81);
+      line-height: .65cm;
+      margin-bottom: 10px;
+      }
+      section.about .socials{
+      display: flex;
+      }
+      section.about .socials a{
+      display: flex;
+      align-items: center;
+      padding: 1;
+      justify-content: center;
+      width: 35px;
+      margin-right: 40;
+      border-radius: 50%;
+      }
+      section.about .socials a:hover{
+      background: yellowgreen;
+      }
+
+
+
+
+
+
+      section.services{
+        background: #dcd0d0
+        }
+        .services-head{
+        color: rgb(20, 14, 14);
+        text-align: center;
+        margin-bottom: 4px;
+        line-height: 2rem;
+        color: rgb(17, 9, 9);
+        size: 70;
+        font-size: 100;
+        }
+        .services-head + p{
+        color: red;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-bottom: 6rem;
+        font-weight: 400;
+        font-size: 44;
+        }
+        .card img{
+        width: 150px;
+        background:white;
+        }
+        section.services .card-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2.5cm;
+        }
+        section.services .card-grid .card{
+        background: rgb(105, 133, 49);
+        padding: 3rem 2rem;
+        position: relative;
+        text-align: center;
+        transition: all .2s ease;
+        }
+        section.services .card-grid .card img{
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var();
+        }
+        section.services .card-grid .card h2{
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin-bottom: 0.5rem;
+        margin-top: 35;
+        color: #1f1d87;
+        }
+        section.services .card-grid .card p{
+        font-family: 'Lato', sans-serif;
+        color: black;
+        line-height: 1.6;
+        }
+        section.services .card-grid .card:hover{
+        background: rgb(152, 108, 108);
+        }
+        section.services .card-grid .card:hover h2{
+        color: black;
+        }
+        section.services .card-grid .card:hover p{
+        color: yellowgreen;
+        }
+
+
+        section.education{
+          background: #dcd0d0
+          }
+          .edu{
+          color: rgb(20, 14, 14);
+          text-align: center;
+          margin-bottom: 15px;
+          line-height: 6rem;
+          color: red;
+          size: 70;
+          font-size: 100;
+          }
+          .edu span{
+            color: black;
+          }
+          .edu + p{
+          color: rgb(1, 1, 1);
+          font-family: 'Lato', sans-serif;
+          margin-bottom: 1rem;
+          text-align: center;
+          margin-bottom: 6rem;
+          font-weight: 400;
+          font-size: 42;
+          }
+          .card img{
+            margin-top: 4px;
+          width: 150px;
+          background:white;
+          }
+          section.education .card-grid{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          column-gap: 2.5cm;
+          }
+          section.education .card-grid .card{
+          background: wheat;
+          padding: 3rem 2rem;
+          position: relative;
+          text-align: center;
+          transition: all .2s ease;
+          }
+          section.education .card-grid .card img{
+          position: absolute;
+          top: -1.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          color: var();
+          }
+          section.education .card-grid .card h2{
+          font-weight: 600;
+          font-size: 1.9rem;
+          margin-bottom: 0.5rem;
+          margin-top: 38;
+          color: #3937a2;
+          }
+          section.education .card-grid .card p{
+          font-family: 'Lato', sans-serif;
+          color: black;
+          line-height: 1.6;
+          }
+          section.education .card-grid .card:hover{
+          background: green;
+          }
+          section.education .card-grid .card:hover h2{
+          color: rgb(37, 16, 57);
+          }
+          section.education .card-grid .card:hover p{
+          color: rgb(29, 31, 27);
+          }
+
+
+
+          h1.title{
+            color: black;
+            font-size: 75;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+          }
+
+          h1.title span{
+            color:red;
+          }
+
+          .contact {
+            display: flex;
+            width: auto;
+            text-align: left;
+            align-items: left;
+        }
+        
+        .contact1 {
+            width: 40%;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .contact1 p{
+          font-size: 24;
+          margin-left: 2px;
+          color: blue;
+        }
+        .contact2 {
+            width: 1%;
+            margin-right: 500px;
+        
+        }
+        
+        .contact1 ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .contact1 li {
+            color: rgb(210, 147, 31);
+            padding-left: 10px;
+        }
+        
+        .contact1 ul li a {
+            margin-left: 22px;
+            color: rgba(37, 44, 182, 0.629);
+            text-decoration: none;
+        }
+        
+        .contact1 ul li a:hover {
+            color: rgb(144, 192, 40);
+        }
+        
+        .contact1 h1 {
+            color: brown;
+            margin-top: 1px;
+            padding-bottom: 11px;
+            font-weight:   bold;
+            margin-left: 55px;
+           font-size: 50;
+        }
+        
+        .contact1 h2 {
+            color: rgb(73, 35, 35);
+            font-weight: 200;
+            font-size: 35;
+            padding-bottom: 4px;
+            margin-top: 22px;
+            margin-left: 25px;
+        }
+        
+        .form {
+            margin-top: 100px;
+        }
+        
+        .form-group {
+            width: 22px;
+            padding-top: 22px;
+            margin-right: 22px;
+        }
+        
+        .form-group input {
+            padding: 15px;
+            padding-right: 283px;
+            background-color: rgb(9, 50, 55);
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+        
+        .form-group textarea {
+            padding: 15px;
+            padding-right: 214px;
+            height: 105px;
+            background-color: rgb(8, 47, 52);
+            color: #fff;
+            ;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+        
+        .btn2 {
+            background-color: rgb(210, 147, 31);
+            padding: 7px 25px 7px 25px;
+            border: none;
+            border-radius: 1px;
+            font-size: 15px;
+            margin-top: 23px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            font-weight: bold;
+        
+        }
+        
+        .btn2:hover {
+            color: white;
+        }
